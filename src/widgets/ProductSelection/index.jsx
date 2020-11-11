@@ -1,5 +1,6 @@
 import React from "react";
 import SelectionAside from "./SelectionAside";
+
 export const InterfaceContext = React.createContext({
   data: {
     products: [],

@@ -1,8 +1,5 @@
 "use strict";
 
-var _widgets = require("./widgets");
-"use strict";
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
@@ -25,6 +22,10 @@ Object.keys(_widgets).forEach(function (key) {
 });
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+_reactDom.default.render( /*#__PURE__*/_react.default.createElement(_widgets.ProductSelection, {
+  products: "1Bla"
+}), document.getElementById("root"));
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -45,6 +46,7 @@ var SelectionAside = function SelectionAside() {
   return /*#__PURE__*/_react.default.createElement("div", null, "Selected products ", context.products, " ");
 };
 
+console.log("SelectionAside", SelectionAside);
 var _default = SelectionAside;
 exports.default = _default;
 "use strict";
