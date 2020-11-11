@@ -1,20 +1,35 @@
 {
   "name": "ff-eshop-react-widgets",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "main": "src/index.js",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chemicalbr/ff-eshop-widgets.git"
+  },
+  "author": "Emil Tsokov",
   "dependencies": {
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-scripts": "3.4.3"
   },
   "devDependencies": {
-    "typescript": "3.8.3"
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
+  },
+  "peerDependencies": {
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build-module": "./node_modules/.bin/babel src --out-file index.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
